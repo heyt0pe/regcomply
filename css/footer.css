@@ -1,0 +1,62 @@
+footer {
+    width: 100%;
+    background: #000;
+    padding: 8vw 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer div.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 258px;
+    margin: 0 5%;
+}
+
+footer div.footer-col img.logo {
+    height: 25px;
+}
+
+footer div.footer-col p.sub-text {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    opacity: 0.3;
+}
+
+footer div.footer-col p.sub-title {
+    font-size: 11px;
+    line-height: 30px;
+    color: #ffffff;
+    opacity: 0.54;
+}
+
+footer div.footer-col nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer div.footer-col nav a.nav-item {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer div.footer-col a.contact {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer div.footer-col a.mail {
+    margin-bottom: 45px;
+}

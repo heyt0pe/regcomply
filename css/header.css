@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    padding: 20px 5%;
+    padding-top: 35px;
+    background: #0a1d4f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img.logo {
+    height: 25px;
+}
+
+header a.nav-item {
+    font-size: 14px;
+    line-height: 14px;
+    color: #f7f7f8;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+header a.early-access {
+    background: #06c03a;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #f7f7f8;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin-left: 15px;
+}
