@@ -1,18 +1,23 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 @font-face {
     font-family: "ProductSans";
     src: url("../assets/fonts/ProductSans.ttf");
 }
 
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 /* Chrome, Safari, Edge, Opera */
 
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -24,7 +29,9 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     font-family: ProductSans, Arial, Helvetica, sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -47,7 +54,7 @@ div.container {
 section.section-1 {
     width: 100%;
     background: rgb(10, 29, 79);
-    background: linear-gradient( 165deg, rgba(10, 29, 79, 1) 67%, rgba(255, 255, 255, 1) 67%);
+    background: linear-gradient(165deg, rgba(10, 29, 79, 1) 67%, rgba(255, 255, 255, 1) 67%);
     padding: 0 5%;
     padding-top: 85px;
     display: flex;
@@ -140,6 +147,7 @@ section.section-2 div.row-2 {
     margin-top: 75px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -169,7 +177,7 @@ section.section-2 div.row-2 div.row-section div.section-title {
 section.section-3 {
     width: 100%;
     background: rgb(255, 255, 255);
-    background: linear-gradient( 172deg, rgba(255, 255, 255, 1) 20%, rgba(247, 250, 255, 1) 20%);
+    background: linear-gradient(172deg, rgba(255, 255, 255, 1) 20%, rgba(247, 250, 255, 1) 20%);
     padding: 0 17%;
     padding-top: 95px;
     display: flex;
@@ -181,7 +189,7 @@ section.section-3 {
 section.section-4 {
     width: 100%;
     background: rgba(247, 50, 255, 1);
-    background: linear-gradient( 172deg, rgba(247, 250, 255, 1) 20%, rgba(255, 255, 255, 1) 20%);
+    background: linear-gradient(172deg, rgba(247, 250, 255, 1) 20%, rgba(255, 255, 255, 1) 20%);
     padding: 0 17%;
     padding-top: 85px;
     display: flex;
@@ -285,7 +293,7 @@ section.section-3 div.row-2 div.row-section p {
 section.section-5 {
     width: 100%;
     background: rgba(255, 255, 255, 1);
-    background: linear-gradient( 172deg, rgba(255, 255, 255, 1) 20%, #040f2d 20%, #040f2d 70%, rgba(255, 255, 255, 1) 70%);
+    background: linear-gradient(172deg, rgba(255, 255, 255, 1) 20%, #040f2d 20%, #040f2d 70%, rgba(255, 255, 255, 1) 70%);
     padding: 0 17%;
     padding-top: 235px;
     display: flex;
@@ -425,7 +433,8 @@ section.section-6 .carousel .slide {
     padding-left: 5%;
 }
 
-section.section-6 .carousel, section.section-6 .carousel .slide {
+section.section-6 .carousel,
+section.section-6 .carousel .slide {
     min-width: 100%;
     display: flex;
     align-items: center;
@@ -492,6 +501,7 @@ section.section-6 div.use-case div.use-case-section a.early-access {
     0% {
         margin-left: 0%;
     }
+
     100% {
         margin-left: -100%;
     }
@@ -501,7 +511,29 @@ section.section-6 div.use-case div.use-case-section a.early-access {
     0% {
         margin-left: -100%;
     }
+
     100% {
         margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    section.section-2 div.row-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    section.section-2 div.row-2 div.row-section {
+        margin-top: 50px;
+    }
+    section.section-3 {
+        width: 100%;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(172deg, rgba(255, 255, 255, 1) 20%, rgba(247, 250, 255, 1) 20%);
+        padding: 0 17%;
+        padding-top: 95px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
     }
 }

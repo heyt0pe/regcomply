@@ -72,3 +72,12 @@
   background-color: #0A1D4F;
   color: white;
 }
+@media screen and (max-width: 1200px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 50px;
+    border: 10px solid whitesmoke;
+    width: 90%;
+  }
+}
