@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,49 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script src="script/index.js"></script>
     <title>RegComply</title>
 </head>
+
 <body>
-    
+
     <!-- HEADER START -->
 
-    <header>
-        <img src="assets/icons/logo.svg" alt="logo" class="logo" />
+    <header id="navbar" class="navbar">
+        <a href="#">
+        <img src="assets/icons/logo.svg" alt="logo" class="logo" /></a>
         <nav>
-            <a href="#" class="nav-item">About</a>
-            <a href="#" class="nav-item">Features</a>
-            <a href="#" class="nav-item">Industries</a>
-            <a href="#" class="early-access">Get Early Access</a>
+            <a href="#features" class="nav-item">Features</a>
+            <a href="#industries" class="nav-item">Industries</a>
+            <a href="#" class="early-access nav-item">Get Early Access</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="assets/icons/menu.svg" class="menu-icon" alt="" srcset="">
+              </a>
         </nav>
     </header>
 
     <!-- HEADER END -->
 
+    <!-- MODAL START -->
+
+    <div id="Modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 class="modal-title">Join our list</h3>
+            <p class="modal-description">Sign up here to get the lastest news and updates.</p>
+            <div class="modal-inputs">
+                <input type="text" name="name" placeholder="Enter your name" size="40" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <form action="">
+                <button type="submit" class="modal-submit">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL END -->
 
 
     <!-- BODY START -->
@@ -72,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-3">
+        <section class="section-3" id="features">
             <div class="row-1">
                 <img src="assets/images/img2.jpg" />
                 <div class="row-section">
@@ -87,9 +112,7 @@
                         knowledge sources, risk management teams are struggling
                         to identify risk signals from the noise.
                     </p>
-                    <a href="#" class="early-access"
-                        >Get Early Access</a
-                    >
+                    <a href="#features" class="early-access">Get Early Access</a>
                 </div>
             </div>
             <div class="row-2">
@@ -134,9 +157,7 @@
                         knowledge sources, risk management teams are struggling
                         to identify risk signals from the noise.
                     </p>
-                    <a href="#" class="early-access"
-                        >Get Early Access</a
-                    >
+                    <a href="#features" class="early-access">Get Early Access</a>
                 </div>
             </div>
             <div class="row-2">
@@ -166,7 +187,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-5">
+        <section class="section-5" id="industries">
             <h2>Industries we work with</h2>
             <p>
                 Transform how your enterprise identifies, investigates, and
@@ -194,22 +215,14 @@
                 monitors risk.
             </p>
             <div class="title-bar">
-                <div
-                    class="title-item title-active"
-                    onclick="moveBackward()"
-                >
+                <div class="title-item title-active" onclick="moveBackward()">
                     USE CASE 01
                 </div>
-                <div
-                    class="title-item"
-                    onclick="moveForward()"
-                >
+                <div class="title-item" onclick="moveForward()">
                     USE CASE 02
                 </div>
             </div>
-            <carousel
-                class="carousel"
-            >
+            <carousel class="carousel">
                 <slide class="slide" id="slide-1">
                     <div class="use-case">
                         <img src="assets/images/img4.jpg" />
@@ -224,9 +237,7 @@
                                 first to try it. Due to the overwhelming volume
                                 of internal and external knowledge sources.
                             </p>
-                            <a href="#" class="early-access"
-                                >Get Early Access</a
-                            >
+                            <a href="#industries" class="early-access">Get Early Access</a>
                         </div>
                     </div>
                 </slide>
@@ -244,9 +255,7 @@
                                 first to try it. Due to the overwhelming volume
                                 of internal and external knowledge sources.
                             </p>
-                            <a href="#" class="early-access"
-                                >Get Early Access</a
-                            >
+                            <a href="#industries" class="early-access">Get Early Access</a>
                         </div>
                     </div>
                 </slide>
@@ -256,7 +265,7 @@
 
     <!-- BODY END -->
 
-    
+
     <!-- FOOTER START -->
 
     <footer>
@@ -282,9 +291,7 @@
             <p class="sub-title">
                 EMAIL
             </p>
-            <a href="mailto:hello@spectra.co" class="contact mail"
-                >hello@spectra.co</a
-            >
+            <a href="mailto:hello@spectra.co" class="contact mail">hello@spectra.co</a>
             <p class="sub-title">
                 PHONE NUMBER
             </p>
@@ -292,8 +299,20 @@
         </div>
     </footer>
 
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+
     <!-- FOOTER END -->
-
-
+    <script src="script/header.js"></script>
+    <script src="script/modal.js"></script>
 </body>
+
 </html>

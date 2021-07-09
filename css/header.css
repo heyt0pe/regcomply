@@ -6,13 +6,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    z-index: 1;
 }
 
 header img.logo {
     height: 25px;
 }
 
-header a.nav-item {
+header a.nav-item{
     font-size: 14px;
     line-height: 14px;
     color: #f7f7f8;
@@ -30,4 +32,40 @@ header a.early-access {
     text-decoration: none;
     padding: 15px 20px;
     margin-left: 15px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 799px) {
+    .nav-item {
+        display: none;
+    }
+    .navbar .menu-icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    /* .navbar.responsive {position: relative;} */
+    /* .navbar.responsive .menu-icon {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    } */
+    
+    /* header a.nav-item {
+        float: none;
+        display: flex;
+        flex-direction: column;
+    } */
 }
