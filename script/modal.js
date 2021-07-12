@@ -5,7 +5,7 @@ let closeModal = document.getElementsByClassName('close-btn')[0];
 
 for (var i = 0; i <= button.length; i++) {
     button[i]?.addEventListener("click", function () {
-        modal.style.display = "block";
+        modal.style.display = "flex";
     });
     closeModal.addEventListener("click", function () {
         modal.style.display = "none";

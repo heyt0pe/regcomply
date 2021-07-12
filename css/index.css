@@ -8,21 +8,16 @@ html {
     src: url("../assets/fonts/ProductSans.ttf");
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 /* Chrome, Safari, Edge, Opera */
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
 
 /* Firefox */
 
@@ -30,9 +25,7 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     font-family: ProductSans, Arial, Helvetica, sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -434,8 +427,7 @@ section.section-6 .carousel .slide {
     padding-left: 5%;
 }
 
-section.section-6 .carousel,
-section.section-6 .carousel .slide {
+section.section-6 .carousel, section.section-6 .carousel .slide {
     min-width: 100%;
     display: flex;
     align-items: center;
@@ -502,7 +494,6 @@ section.section-6 div.use-case div.use-case-section a.early-access {
     0% {
         margin-left: 0%;
     }
-
     100% {
         margin-left: -100%;
     }
@@ -512,9 +503,23 @@ section.section-6 div.use-case div.use-case-section a.early-access {
     0% {
         margin-left: -100%;
     }
-
     100% {
         margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section.section-5 div.industries-row {
+        width: 100%;
+        display: grid;
+        grid-row: auto auto;
+        grid-template-columns: 200px 200px;
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+    }
+    section.section-5 div.industries-row div.industry {
+        width: 180px;
+        max-width: unset;
     }
 }
 
@@ -522,78 +527,85 @@ section.section-6 div.use-case div.use-case-section a.early-access {
     html {
         overflow-x: hidden;
     }
-
     section.section-2 div.row-2 {
         flex-direction: column;
         align-items: center;
     }
-
     section.section-2 div.row-2 div.row-section {
         margin-top: 40px;
     }
-
     section.section-2 div.row-1 {
         flex-direction: column;
         align-items: center;
     }
-
     section.section-2 div.row-1 div.row-section h3 {
         margin-bottom: 20px;
     }
-
     section.section-3 div.row-1 {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
-
     section.section-3 div.row-1 img {
         /* temporary */
         display: none;
     }
-
     /* temporary (remove phone images)*/
     section.section-1 img {
         width: 90%;
     }
-
     section.section-3 div.row-2 {
         margin-top: 60px;
         align-items: center;
         justify-content: space-between;
         width: 120%;
     }
-
     section.section-3 div.row-1 div.row-section {
         width: 100%;
         margin: auto;
         text-align: center;
         justify-content: center;
     }
-
-    section.section-3 div.row-2 div.row-section {
+    /* section.section-3 div.row-2 div.row-section {
         width: 300px;
-    }
-
+    } */
     section.section-5 div.industries-row {
         overflow-x: auto;
     }
-
     section.section-6 .carousel {
         max-width: 80%;
     }
-
     section.section-6 div.use-case img {
         display: none;
     }
-
     section.section-5 {
         padding: 0;
         padding-top: 235px;
         padding-bottom: 170px;
     }
-
     section.section-1 h1 {
         font-size: 38px;
+    }
+    section.section-6 div.title-bar {
+        width: 100%;
+    }
+    section.section-6 div.title-bar div.title-item {
+        text-align: center;
+    }
+    section.section-3 div.row-2 {
+        flex-direction: column;
+    }
+    section.section-3 div.row-2 div.row-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.section-5 div.industries-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.section-5 h2, section.section-5 p {
+        text-shadow: 0px 0px 1px rgb(10, 29, 79);
     }
 }
