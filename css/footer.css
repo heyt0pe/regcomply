@@ -5,6 +5,7 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    height: min-content;
 }
 
 footer div.footer-col {
@@ -59,4 +60,11 @@ footer div.footer-col a.contact {
 
 footer div.footer-col a.mail {
     margin-bottom: 45px;
+}
+
+@media screen and (max-width: 799px) {
+
+    footer {
+        display: block;
+    }
 }

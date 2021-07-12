@@ -34,38 +34,16 @@ header a.early-access {
     margin-left: 15px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 .menu-icon {
     display: none;
 }
 
 @media screen and (max-width: 799px) {
-    .nav-item {
+    header a.nav-item {
         display: none;
     }
     .navbar .menu-icon {
         float: right;
         display: block;
     }
-}
-
-@media screen and (max-width: 799px) {
-
-    /* .navbar.responsive {position: relative;} */
-    /* .navbar.responsive .menu-icon {
-        position: absolute;
-        right: 25px;
-        top: 25px;
-    } */
-    
-    /* header a.nav-item {
-        float: none;
-        display: flex;
-        flex-direction: column;
-    } */
 }
