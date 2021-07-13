@@ -598,6 +598,14 @@ section.section-6 div.use-case div.use-case-section a.early-access {
 }
 
 @media screen and (max-width: 500px) {
+    section.section-5 {
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        background: linear-gradient(172deg, rgba(255, 255, 255, 1) 12%, #040f2d 12%, #040f2d 70%, rgba(255, 255, 255, 1) 70%);
+        padding: 0 17%;
+        padding-top: 235px;
+    }
+
     section.section-5 div.industries-row {
         display: flex;
         flex-wrap: wrap;
