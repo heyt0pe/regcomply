@@ -569,9 +569,6 @@ section.section-6 div.use-case div.use-case-section a.early-access {
     /* section.section-3 div.row-2 div.row-section {
         width: 300px;
     } */
-    section.section-5 div.industries-row {
-        overflow-x: auto;
-    }
     section.section-6 .carousel {
         max-width: 80%;
     }
@@ -605,6 +602,11 @@ section.section-6 div.use-case div.use-case-section a.early-access {
         display: flex;
         flex-wrap: wrap;
     }
+
+    section.section-5 div.industries-row div.industry {
+        margin-bottom: 15px;
+    }
+
     section.section-5 h2, section.section-5 p {
         text-shadow: 0px 0px 1px rgb(10, 29, 79);
     }
