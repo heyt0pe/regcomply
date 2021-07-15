@@ -48,6 +48,7 @@ footer div.footer-col nav a.nav-item {
     width: 100%;
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 footer div.footer-col a.contact {
